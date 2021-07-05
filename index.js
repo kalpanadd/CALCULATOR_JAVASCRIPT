@@ -11,6 +11,8 @@ class Calculator {
 
     }
     append_Number(incoming_number) {
+        if (this.currentNumber == '0' && incoming_number == '0') return
+        if (this.currentNumber.includes('.') && incoming_number.includes('.')) return
         this.currentNumber += incoming_number;
 
     }
