@@ -23,8 +23,8 @@ class Calculator {
 
     chooseOperation(option) {
         if (this.currentNumber == '') return
-        this.operation = option;
         if (this.previousNumber !== '') this.compute();
+        this.operation = option;
         this.previousNumber = this.currentNumber;
         this.currentNumber = '';
 
@@ -59,8 +59,6 @@ class Calculator {
         this.previousNumber = '';
         this.operation = ''
         this.currentNumber = compute;
-
-
     }
 
     display() {
